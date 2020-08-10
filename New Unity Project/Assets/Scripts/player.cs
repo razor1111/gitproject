@@ -84,6 +84,12 @@ private Animator anim;
             anim.SetBool("jump",false);
 
         }
+
+        if(collision.gameObject.tag == "Spike" || collision.gameObject.tag == "Saw") // tag Spike or Saw
+        {
+            GameController.instance.ShowGameOver();
+            Destroy(gameObject);
+        }
     }
 
     void OnCollisionExit2D(Collision2D collision)
