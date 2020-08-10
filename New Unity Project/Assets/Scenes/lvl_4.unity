@@ -40118,7 +40118,7 @@ PrefabInstance:
     - target: {fileID: 5841168720606956694, guid: 217782f94fe1466419b9c803a2ef85c4,
         type: 3}
       propertyPath: lvlName
-      value: lvl_1
+      value: mainMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 217782f94fe1466419b9c803a2ef85c4, type: 3}
