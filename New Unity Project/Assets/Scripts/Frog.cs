@@ -47,6 +47,7 @@ public class Frog : MonoBehaviour
         
     }
 
+    bool playerDestroyed;
     void OnCollisionEnter2D(Collision2D col)
     {
         if(col.gameObject.tag == "Player")
@@ -64,6 +65,13 @@ public class Frog : MonoBehaviour
                 rig.bodyType = RigidbodyType2D.Kinematic;
                 Destroy(gameObject, 0.33f);
         }
+        else
+            {
+                playerDestroyed = true;
+                GameController.instance.ShowGameOver();
+                Destroy(col.gameObject);
+            }
+
     }
 
     }
